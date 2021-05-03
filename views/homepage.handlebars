@@ -2,7 +2,7 @@
   <div class="column is-full spacer">
   </div>
   {{#each posts as |post| }}
-  {{!-- <div class="column is-full">
+  <div class="column is-full">
     <div class="card">
       <a href="/posts/{{post.id}}">
         <header class="card-header has-background-success">
@@ -12,12 +12,12 @@
         </header>
         <div class="card-content">
           <div class="content">
-            <p>Created by: {{post.user.username}} on {{post.createdAt}}</p>
+            <p>Created by: {{post.user.username}}</p>
           </div>
         </div>
     </div>
     </a>
-  </div> --}}
+  </div>
   {{post}}
   {{/each}}
 </div>
