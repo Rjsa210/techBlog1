@@ -7,7 +7,10 @@ const handleLogin = async (event) => {
   if (username && password) {
     const response = await fetch('/api/users/login', {
       method: 'POST',
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({
+        username: username, 
+        password: password
+      }),
       headers: { 'Content-Type': 'application/json' },
     });
 
